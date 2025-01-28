@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "vite:build": "vite build",
-    "build": "remix vite:build"
+    "build": "vite build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
