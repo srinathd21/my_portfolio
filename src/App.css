@@ -1,0 +1,151 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+:root{
+  --btncolor: #27debf;
+}
+nav{
+  padding: 15px 0px;
+}
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+nav ul li{
+  display: inline-block;
+  margin: 0px 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+.home{
+  width: 100%;
+}
+.profileContent{
+  padding: 100px 10px 0px 50px;
+}
+.profile-name{
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.profile-title{
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.profile-description{
+  font-size: 18px;
+  color: rgb(78, 78, 78);
+  margin-bottom: 20px;
+}
+
+.profile-btn a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px ;
+  border: 1.3px solid var(--btncolor);
+  padding: 10px 40px;
+  border-radius: 30px;
+  color: black;
+}
+.btn-cv{
+  background-color: var(--btncolor);
+  color: white !important;
+  font-weight: 500;
+
+}
+.profile-links a{
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin: 30px 5px 0px;
+  color: black;
+}
+.profile-links a i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+
+}
+.profilePic{
+  margin: 0px auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--btncolor);
+  animation: profilepic 4s linear infinite;
+}
+@keyframes profilepic{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.aboutme-text{
+  font-weight: 550;
+  color: rgb(88, 88, 88);
+  padding: 70px 0px 0px;
+}
+.aboumeContent a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 2px solid var(--btncolor);
+  padding: 10px 30px;
+  transition: .2s;
+}
+.aboumeContent a:hover{
+  background-color: var(--btncolor);
+  font-weight: 600;
+  color: white;
+}
+@media screen and (max-width:992px){
+  .profile-name{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .profile-title{
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .profileContent{
+    padding: 50px 0px 0px;
+    
+  }
+  .Pic1{
+    height: 400px;
+  }
+  .profilePic{
+    margin-top: 60px;
+    height: 300px;
+    width: 300px;
+  }
+  .aboutme-text{
+    padding: 30px 0px 2px;
+  }
+}
