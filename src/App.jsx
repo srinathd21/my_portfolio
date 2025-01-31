@@ -17,8 +17,9 @@ function App() {
           <h1>SRI</h1>
           <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to=''>Projects</Link></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#experience'>Experience</a></li>
+            <li><a href='#projects'>Projects</a></li>
             <li><Link to='/Contact'>Contact</Link></li>
           </ul>
         </div>

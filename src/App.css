@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0px;
   padding: 0px;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  
 }
 :root{
   --btncolor: #27debf;
 }
 nav{
-  padding: 15px 0px;
+  padding: 5px 0px;
 }
 nav .container{
   display: flex;
@@ -122,6 +126,115 @@ nav ul li a{
   font-weight: 600;
   color: white;
 }
+.experience>div{
+  margin-top: 20px;
+  background: linear-gradient(45deg, #23cdb0, #69e2d0, #129490);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 1px 1px 10px rgb(235, 235, 235);
+  color: white;
+  background-size: 200% 200%;
+  animation: gradientAnimation 7s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.experience-box h3{
+  font-weight: 700;
+}
+.experience-box h5{
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.experience-box span{
+  font-size: 14px;
+  font-weight: 600;
+}
+.experiance-desc{
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.skill-img{
+  text-align: center;
+  margin-top: 20px;
+}
+.skill-img img{
+  width: 100px;
+  margin: 30px;
+
+}
+.project-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0px;
+}
+.project-card{
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  box-shadow: 1px 1px 10px rgb(209, 209, 209);
+  position: relative;
+}
+.project-card img{
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  object-fit: fill;
+  
+}
+.project-content{
+  padding: 10px;
+  position: relative;
+}
+.project-tools span{
+  margin: 5px;
+  font-size: 12px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgb(228, 228, 228);
+  padding: 8px;
+  border-radius: 3px;
+}
+.project-desc{
+  margin-top: 15px;
+}
+.project-links{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 70px);
+  opacity: 1;
+  transition: 0.3s;
+}
+.project-card:hover .project-links{
+  opacity: 1;
+  transform: translate(-50%, -30px);
+}
+.project-links a{
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  color: blue;
+  background-color: rgb(255, 255, 255,0.7);
+}
+.project-links a i{
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width:992px){
   .profile-name{
     font-weight: 500;
@@ -147,5 +260,8 @@ nav ul li a{
   }
   .aboutme-text{
     padding: 30px 0px 2px;
+  }
+  .experience>div{
+    padding: 20px;
   }
 }
