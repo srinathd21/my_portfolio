@@ -49,7 +49,7 @@ export const Home = () => {
         <div className='home container'>
             <div className="row">
 
-                <div className="col-lg-7 profileContent">
+                <div className="col-lg-7 profileContent" data-aos="fade-down" data-aos-duration="1000">
                     <div className=''>
                         <h1 className="profile-name">Hi, I'm Srinath</h1>
                         <h5 className="profile-title">
@@ -72,7 +72,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-5 Pic1" style={{
+                <div className="col-lg-5 Pic1" data-aos="fade-left" data-aos-duration="1000" style={{
                     backgroundImage: `url(${Pic1})`,
                     backgroundSize: 'contain',
                     backgroundPosition: 'center',
@@ -83,25 +83,16 @@ export const Home = () => {
 
             </div>
 
-            <hr />
-
             <div className="aboutme mt-4" id='about'>
                 <h1 className='text-center ct-title'>About me</h1>
 
                 <div className="row">
 
-                    <div className="col-lg-5 ">
-                        <div className="profilePic" style={{
-                            backgroundImage: `url(${profilePic})`,
-                            backgroundSize: 'contain',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                        }}>
-                        </div>
-
+                    <div className="col-lg-5 profilePicbox" >
+                        <img src={profilePic} className="profilePic" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" alt="" />
                     </div>
 
-                    <div className="col-lg-7 aboumeContent">
+                    <div className="col-lg-7 aboumeContent" data-aos="fade-left" data-aos-duration="1000">
 
                         <p className='aboutme-text'>
                             I am a skilled and results-oriented full-stack web developer with expertise in crafting efficient and scalable web applications. My technical proficiency includes front-end technologies like HTML, CSS, JavaScript, React.js, Bootstrap, and jQuery, as well as backend development using PHP, Python, Django, and MySQL.
@@ -120,12 +111,10 @@ export const Home = () => {
                 </div>
             </div>
 
-            <hr />
-
-            <div className="experience" id='experience'>
+            <div className="experience" id='experience' >
                 <h1 className='text-center ct-title'>Experience</h1>
 
-                <div className="experience-box">
+                <div className="experience-box" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="20">
                     <h3>Developer and Technical Trainer(Full-time)</h3>
                     <span>23<sup>rd</sup> December 2023 - 13<sup>th</sup>January 2025</span>
                     <h5>Apollo Computer Education</h5>
@@ -135,13 +124,12 @@ export const Home = () => {
                 </div>
             </div>
 
-            <hr />
 
-            <div className="skills">
+            <div className="skills" >
                 <div>
                     <h1 className='text-center ct-title'>Skills</h1>
                 </div>
-                <div className='skill-img'>
+                <div className='skill-img' data-aos="zoom-in-down" data-aos-duration="1000">
                     <img src={html} alt="" />
                     <img src={css} alt="" />
                     <img src={bootstrap} alt="" />
@@ -156,8 +144,6 @@ export const Home = () => {
                 </div>
 
             </div>
-
-            <hr />
 
             <div className="projects" id='projects'>
                 <h1 className='text-center ct-title'>Projects</h1>

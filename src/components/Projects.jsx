@@ -5,10 +5,10 @@ export const Projects = (props) => {
 
     return (
         <>
-            <div className="project-div">
+            <div className="project-div" >
                 {projects.map((project, index) => {
                     return (
-                        <div key={index} className="project-card">
+                        <div key={index} className="project-card" data-aos="flip-left" data-aos-duration="1100" data-aos-delay="20">
                             <img src={project.img} alt={project.title} />
                             <div className="project-content">
                                 <h5>{project.title}</h5>
