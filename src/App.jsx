@@ -20,7 +20,7 @@ function App() {
             <li><a href='#about'>About</a></li>
             <li><a href='#experience'>Experience</a></li>
             <li><a href='#projects'>Projects</a></li>
-            <li><Link to='/Contact'>Contact</Link></li>
+            <li><a href='mailto:srinathdevan12@gmail.com'>Contact</a></li>
           </ul>
         </div>
       </nav>

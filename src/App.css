@@ -59,9 +59,10 @@ nav ul li a{
   display: inline-block;
   margin: 5px ;
   border: 1.3px solid var(--btncolor);
-  padding: 10px 40px;
+  padding: 10px 30px;
   border-radius: 30px;
   color: black;
+  font-size: 14px;
 }
 .btn-cv{
   background-color: var(--btncolor);
@@ -78,6 +79,7 @@ nav ul li a{
   position: relative;
   margin: 30px 5px 0px;
   color: black;
+
 }
 .profile-links a i{
   position: absolute;
@@ -236,15 +238,30 @@ nav ul li a{
 }
 
 @media screen and (max-width:992px){
+  nav ul li{
+    display: none;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav ul li:first-child{
+    display: block;
+  }
+  nav ul li:last-child{
+    display: block;
+  }
   .profile-name{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
   .profile-title{
     font-weight: 500;
-    font-size: 23px;
+    font-size: 16px;
     margin-bottom: 20px;
+  }
+  .profile-description{
+    font-size: 15px;
   }
   .profileContent{
     padding: 50px 0px 0px;
