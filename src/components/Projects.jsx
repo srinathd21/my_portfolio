@@ -25,8 +25,11 @@ export const Projects = (props) => {
 
                             </div>
                             <div className="project-links">
-                                {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>}
-                                <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                                {project.link && <a href={project.link} target="_blank"><i class="fa-solid fa-link"></i></a>}
+                                {
+                                    project.github &&
+                                    <a href={project.github} target="_blank" ><i class="fa-brands fa-github"></i></a>
+                                }
                             </div>
                         </div>
                     )

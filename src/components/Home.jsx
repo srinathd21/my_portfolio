@@ -14,6 +14,7 @@ import mysql from './../assets/skills/mysql.png'
 import git from './../assets/skills/git.png'
 import arka from './../assets/projects/arka.png'
 import resume from './../assets/projects/resume.png'
+import rdcrud from './../assets/projects/rd-crud.gif'
 import doctor from './../assets/projects/doctor.png'
 import myresume from './../assets/resume.pdf'
 import { Projects } from './Projects'
@@ -23,26 +24,34 @@ export const Home = () => {
         {
             title: 'Course and Company Website',
             img: arka,
-            tools: ['Html', 'CSS', 'Js', 'Bootstrap', 'PHP', 'MySql'],
+            tools: ['Html', 'CSS', 'Js', 'Bootstrap5', 'PHP', 'MySql'],
             desc: 'Developed a comprehensive website for Arka Technologies, aimed at serving both company purposes and technical training courses.',
             link: 'https://arka.org.in/course.php',
-            github: 'https://github.com/srinathd21/Arka_host',
         },
         {
             title: 'Resume Builder',
             img: resume,
-            tools: ['Html', 'CSS', 'Js', 'Bootstrap'],
+            tools: ['Html', 'CSS', 'Js', 'Bootstrap5'],
             link: 'https://arka.org.in/resume.php',
             github: 'https://github.com/srinathd21/Resume-Builder',
             desc: 'Created a Resume Builder tool with HTML, CSS, and JavaScript that generates customized resumes based on user inputs and allows downloading as a PDF.'
         },
         {
+            title: 'React - Django CRUD',
+            img: rdcrud,
+            tools: ['Html', 'CSS', 'Bootstrap5', 'React.js','Django Restframework','Sqlite3'],
+            github: 'https://github.com/srinathd21/React-django.git',
+            desc: 'Built a CRUD app using React, Django REST, SQLite3, and JWT with secure authentication and RESTful APIs.'
+
+        },
+        {
             title: 'Doctor Appointment Booking',
             img: doctor,
-            tools: ['Html', 'CSS', 'Js', 'Bootstrap', 'python', 'django', 'sqlite3',],
+            tools: ['Html', 'CSS', 'Js', 'Bootstrap5', 'python', 'Django', 'Sqlite3',],
             github: 'https://github.com/srinathd21/doc_appointment/tree/main/hospital_app',
             desc: 'Developed a web-based application for booking doctor appointments, incorporating an admin panel for managing appointments, doctors, and patients.'
         },
+        
     ]
 
     return (
